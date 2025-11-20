@@ -223,8 +223,7 @@ const Chat = () => {
       {/* ------------ MAIN AREA ------------ */}
       <main className="flex-1 flex flex-col">
         {/* HEADER */}
-        <div className="flex items-center justify-between p-4 border-b bg-white h-20">
-          {/* MOBILE MENU BUTTON */}
+        <header className="flex items-center justify-between p-4 border-b bg-white h-20">
           <button
             onClick={() => setSidebarOpen(true)}
             className="md:hidden text-2xl mr-2"
@@ -232,9 +231,10 @@ const Chat = () => {
             ☰
           </button>
 
-          <div className="text-lg font-semibold">Bot AI</div>
+          <h1 className="text-lg font-semibold">Bot AI</h1>
+
           <div className="text-sm text-gray-600">You are connected</div>
-        </div>
+        </header>
 
         {/* MAIN CHAT SCREEN */}
         <div className="flex-1 overflow-auto p-6">
